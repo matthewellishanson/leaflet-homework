@@ -1,4 +1,4 @@
-var earthquakeURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_month.geojson";
+var earthquakeURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson";
 
 function markerSize(magnitude) {
     return magnitude * 2;
@@ -57,7 +57,7 @@ d3.json(earthquakeURL, function(geoJSON) {
           attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
           maxZoom: 18,
           id: "mapbox.streets",
-          accessToken: API_KEY
+          accessToken: "pk.eyJ1IjoiYWNjZXNzdG9rZW4iLCJhIjoiY2p4MHpkbzg1MDRoMTN5cGF6anR3Z3ZvZSJ9.pxyd4vOCuCugaaYqRUrdFw"
         });
 
         var baseLayers = {
